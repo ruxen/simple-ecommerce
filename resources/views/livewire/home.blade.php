@@ -109,7 +109,7 @@
                 @foreach ($products as $product)
                     <div
                         class="relative overflow-hidden transition duration-300 ease-in-out rounded-lg shadow-lg group">
-                        <a href="#">
+                        <a wire:navigate href="{{ route('product.details', $product->slug) }}">
                             <div class="flex items-center justify-center">
                                 <img src="{{ url('storage', $product->images[0]) }}" alt="{{ $product->name }}"
                                     class="object-cover h-32 transition-transform duration-500 ease-in-out sm:h-40 md:h-48 group-hover:scale-90">
