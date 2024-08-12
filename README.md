@@ -39,6 +39,7 @@ To run the application locally:
     ```
     php artisan db:seed
     ```
+    If you run the seeder, copy images from the assets directory to the storage directory.
 5. **Edit your .env file to configure the necessary environment variables.**
 6. **Start the Laravel development server and the front-end build process:**
     ```
